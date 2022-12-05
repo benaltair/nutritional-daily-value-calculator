@@ -5,6 +5,14 @@
 	let dailyValuesTable: Nutrient[] = dailyValues;
 </script>
 
+<svelte:head>
+	<title>Daily Value Calculator</title>
+	<meta
+		name="description"
+		content="A simple calculator to figure out the actual amount of a nutrient on a nutritional label based on the daily value."
+	/>
+</svelte:head>
+
 <header>
 	<h1>Daily Value Calculator</h1>
 	<p>
@@ -17,7 +25,10 @@
 	</p>
 </header>
 <p>
-	Enter the percentage shown on the package to see the amount calculated.
+	Enter the percentage shown on the package to see the amount calculated. This was built for
+	nutritional tracking because many foods only show the percentage of the daily value, not the
+	actual amount.
+	<!-- Lazy way to clear the table by refreshing the page -->
 	<br /><a href="/" rel="external">Clear Table</a>
 </p>
 <table>
