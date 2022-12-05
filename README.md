@@ -5,3 +5,6 @@ It's a simple calculation:
 **percentage x daily recommended value = amount per serving**
 
 This calculator is meant as a tool of convenience, not a source of dietary recommendations. It was designed for personal use but may be forked and adapted if anyone finds it helpful.
+
+## Architecture
+This is a simple frontend web application developed using [SvelteKit](https://kit.svelte.dev) and styled with [SimpleCSS](https://simplecss.org). It makes the calculations in Javascript on the endpoint with no data shared to the server or stored. It can be deployed on Netlify (as it is now), Vercel, or any number of services.
