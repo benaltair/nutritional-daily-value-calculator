@@ -52,7 +52,7 @@
 						id="{key}-input"
 					/>%
 				</td>
-				<td>
+				<td id="{key}-value">
 					{#if dailyValuesTable[i].percentage}
 						{Math.round(value * dailyValuesTable[i].percentage) / 100} {unit}
 					{/if}
