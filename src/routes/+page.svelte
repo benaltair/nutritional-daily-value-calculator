@@ -1,7 +1,8 @@
 <script lang="ts">
 	import 'simpledotcss/simple.min.css';
 	import { dailyValues } from '$lib/dailyValues';
-	let dailyValuesTable = dailyValues;
+	import type { Nutrient } from 'src/lib/dailyValues';
+	let dailyValuesTable: Nutrient[] = dailyValues;
 </script>
 
 <header>
@@ -15,7 +16,10 @@
 		> from food labels in Canada
 	</p>
 </header>
-
+<p>
+	Enter the percentage shown on the package to see the amount calculated.
+	<br /><a href="/" rel="external">Clear Table</a>
+</p>
 <table>
 	<thead>
 		<tr>
@@ -47,6 +51,10 @@
 		{/each}
 	</tbody>
 </table>
+
+<footer>
+	<p>A quick project by Ben built for personal use, feel free to share</p>
+</footer>
 
 <style>
 	table {
