@@ -6,7 +6,14 @@
 
 <header>
 	<h1>Daily Value Calculator</h1>
-	<p>Converting the percentage of daily value from food labels in Canada</p>
+	<p>
+		Converting the percentage of <a
+			target="_blank"
+			rel="noopener noreferrer"
+			href="https://www.canada.ca/en/health-canada/services/technical-documents-labelling-requirements/table-daily-values/nutrition-labelling.html#shr-pg0"
+			>daily value</a
+		> from food labels in Canada
+	</p>
 </header>
 
 <table>
@@ -14,7 +21,8 @@
 		<tr>
 			<th>Nutrient</th>
 			<th>Percentage</th>
-			<th>Serving Amount</th>
+			<th>Serving</th>
+			<th>Daily Total</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -34,6 +42,7 @@
 						{Math.round(value * dailyValuesTable[i].percentage) / 100} {unit}
 					{/if}
 				</td>
+				<td>{value} {unit}</td>
 			</tr>
 		{/each}
 	</tbody>
