@@ -11,3 +11,17 @@ This calculator is meant as a tool of convenience, not a source of dietary recom
 
 ## Architecture
 This is a simple frontend web application developed using [SvelteKit](https://kit.svelte.dev) and styled with [SimpleCSS](https://simplecss.org). It makes the calculations in Javascript on the endpoint with no data shared to the server or stored. It can be deployed on Netlify (as it is now), Vercel, or any number of services.
+
+## Develop
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+npm run preview
+```
